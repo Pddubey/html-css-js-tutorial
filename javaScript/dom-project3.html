@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom-project3</title>
+    <style>
+        .calculate-button{
+            background-color: rgb(10, 117, 10);
+            color: white;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: none;
+        }
+
+        .calculate-button:hover{
+            background-color: rgb(70, 164, 70) ;
+        }
+        .calculate-button:active{
+            background-color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>Amazon Shipping Calculator</p>
+    <p>Order under $40 = +$10 shipping</p>
+    <p>Orders over $40 = Free shipping</p>
+
+    <input  class="input-cost" placeholder="Cost to order" onkeydown="
+    console.log(event.key);
+    if(event.key==='Enter'){
+        calculateCost();
+    }
+    ">
+
+    <button class="calculate-button" onclick="
+       
+        calculateCost();
+        "
+        >Calculate</button>
+       
+
+    <p class="final-cost"></p>
+
+    <script>
+        
+        
+        function calculateCost(){
+            let inputElement=document.querySelector('.input-cost');
+            let inputCost=Number(inputElement.value);
+        console.log(inputCost);
+            
+            if(inputCost< 40){
+                inputCost=inputCost+10;
+             }
+            document.querySelector('.final-cost').innerHTML=`$${inputCost}`;
+
+        }
+    </script>
+</body>
+</html>

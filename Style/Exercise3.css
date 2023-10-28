@@ -1,0 +1,38 @@
+
+    .Uber-Request-now-Button{
+        background-color: black;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border: none;
+        color: white;
+    }
+    .Amazone{
+        background-color: rgb(255, 216, 20);
+        color: black;
+        
+        font-weight: 450;
+        border: none;
+        font-style: bold;
+        border-radius: 18px;
+        padding-top : 6px;
+        padding-bottom: 6px;
+        padding-right: 40px;
+        padding-left: 40px;
+        margin-left: 18px;
+        margin-right: 18px ;
+}
+.GitHub{
+    background-color: rgb(46,164,79);
+    color: white;
+    font-weight: 450px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+

@@ -1,0 +1,70 @@
+
+/*the selector which have more specific have 
+more priority*/
+    p{
+        font-family: Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+        padding-left: 1%;
+    }
+    .video-title{
+        
+        font-weight: bold;
+        font-size: 45px;
+        width: 600px;
+        line-height: 50px;
+        margin-bottom: 5px;
+        
+        
+    }
+    .video-stats{
+        
+        font-size: 20px;
+        width: 100%;
+        color: rgb(96, 96, 96);
+        margin-bottom: 20px;
+        margin-top: 15px;
+        
+    }
+    .video-author{
+        
+        font-size: 20px;
+        width: 100%;
+        color: rgb(96, 96, 96);
+        margin-bottom: 20px;
+        
+    }
+    .video-description{
+        
+        color: rgb(96, 96, 96);
+        font-size: 23px;
+        width: 500px;
+        line-height: 35px;
+        margin-bottom: 200px;
+
+    }
+    .apple-text{
+        font-weight: 400;
+        font-size: 16px;
+        width: 600px;
+        background-color: rgb(227, 65, 64);
+        
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: white;
+        text-align: center;
+            
+        
+    }
+    .apple-text:hover{
+
+    }
+    .shop-now{
+        font-weight: 600;
+        margin-left: 6px;
+    }
+    .shop-now:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }

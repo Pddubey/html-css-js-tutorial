@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+    <title>javaScript objects</title>
+    <style>
+        .scissors,.rock,.paper,.reset{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body style="background-color: lightpink;">
+
+    <h1>JavaScript Game</h1>
+    <h2>Rock Paper Scisor</h2>
+    <h1>✌️  📃  🪨</h1>
+
+    <button class="scissors" onclick="
+    playerMove='scissors';
+    comMove=randomNum();
+    checkWin(playerMove,comMove);
+    ">scissors</button>
+
+    <button class="paper" onclick="
+    playerMove='paper';
+    comMove=randomNum();
+    checkWin(playerMove,comMove);
+    ">paper</button>
+
+    <button class="rock" onclick="
+    playerMove='rock';
+    comMove=randomNum();
+    checkWin(playerMove,comMove);
+    ">rock</button>
+
+    <button class="reset" onclick="
+    score.win=0;
+    score.loss=0;
+    score.tie=0;
+    ">reset score</button>
+
+    <script>
+
+    console.log(JSON.parse(localStorage.getItem('score')));    
+   
+    let score={
+        win:0,
+        loss:0,
+        tie:0
+    };
+
+    let comMove='';
+        let playerMove='';
+       
+        function randomNum()
+        {
+        let randNum=Math.floor(Math.random()*3)+1;
+       
+        if(randNum===1){
+            comMove='scissors';
+        }
+        else if(randNum==2){
+            comMove='paper';
+        }
+        else{
+            comMove='rock';
+        }
+        return comMove;
+    }
+       
+       function checkWin(playerMove,comMove){
+        if(playerMove===comMove){
+            
+            score.tie+=1;
+            showResult();
+          
+        }
+        else if(playerMove==='scissors'){
+            if(comMove==='paper'){
+                
+                score.win+=1;
+                showResult();
+               
+            }
+            else{
+                
+                score.loss+=1;
+                showResult();
+                
+            }
+         }
+
+         else if(playerMove==='paper'){
+            if(comMove==='scissors'){
+               
+                score.loss+=1;
+                showResult();
+                
+            }
+            else{
+               
+                score.win+=1;
+                showResult();
+                
+            }
+         }
+
+         else if(playerMove==='rock'){
+            if(comMove==='paper'){
+                
+                score.loss+=1;
+                showResult();
+                
+            }
+            else{
+                
+                score.win+=1;
+                showResult();
+                
+            }
+         }
+        
+
+        }
+        localStorage.setItem('score',JSON.stringify(score));
+        
+       function showResult(){
+        
+        alert(`computer move: ${comMove}\n your move :${playerMove}\nwin: ${score.win} , loss: ${score.loss}, tie: ${score.tie}`);
+       }
+
+       
+
+      
+       
+   
+   </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            grid tutorial
+        </title>
+        <style>
+            .main_div{
+                display: grid;
+                grid-template-columns:  300px 1fr;
+                -ms-grid-column-span: 100px;
+                height: 50px;
+              
+            }
+            img {
+    overflow-clip-margin: content-box;
+    overflow:hidden;
+    overflow: x 300px ;
+    overflow: y 300px ;
+}
+
+
+            </style>
+
+    </head>
+
+    <body>
+
+       <div class="main_div">
+        <div class="column1"
+        style="
+        background-color: lightblue;
+        height: 300px;
+        
+        
+        
+        
+        ">
+        <img src="/Thumbnails/profilepic.jpg" style="height: 300px;
+        width: fit-content;">
+            
+            
+
+        </div>
+        <div class="column2"
+        style="
+        height: 300px;
+        overflow:hidden;">
+            <img src="/Thumbnails/jhulewala (2).png" style="
+            border: 2px;
+            border-color: purple;
+            height:400px
+            ;
+            ">
+
+        </div>
+        <div class="column3">
+            hello ji
+        </div>
+       </div>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+
+    .cart{
+        background-color: rgb(255 , 216, 20);
+        border-radius: 15px;
+        border: none;
+        font-size: 10;
+        font-weight: 525;
+       -webkit-text-stroke: 200;
+       -webkit-text-stroke-width: 0.2px;
+       -webkit-text-stroke-color: black;
+        margin-left: 1px;
+        transition: color 0.5s;
+        cursor: pointer;
+        letter-spacing: 0.5px;
+        
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        
+    }
+    .cart:hover{
+        background-color:rgb(208, 189, 94);
+        box-shadow: 8px 6px 10px rgba(0,0,0,0.15);
+        
+    }
+    .cart:active{
+        background-color: black;
+        color: white;
+    }
+    .buy{
+        background-color: rgb(255 , 164, 28);
+        border-radius: 15px;
+        border: none;
+        font-size: 10;
+        font-weight: 525;
+       -webkit-text-stroke: 200;
+       -webkit-text-stroke-width: 0.2px;
+       -webkit-text-stroke-color: black;
+        margin-left: 1px;
+        transition: color 0.5s;
+        cursor: pointer;
+        letter-spacing: 0.5px;
+        
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+       
+
+        
+    }
+    .buy:hover{
+        box-shadow: 8px 6px 10px rgba(0,0,0,0.15);
+        background-color:rgb(249, 179, 74) ;
+        
+    }
+    .buy:active{
+        background-color:white;
+        color:black;
+        
+    }
+   .product{
+    font-size: larger;
+    font-weight: 900;
+    color: black;
+
+   }
+   .price{
+    color: rgb(0, 118, 0);
+    font-weight: 800;
+    font-size: medium;
+   }
+   .status{
+    font-weight: 300;
+   }
+   
+

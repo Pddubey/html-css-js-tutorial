@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+
+<body style="background-color: aqua;">
+  
+  <h1>JavaScript Variables</h1>
+  <p style="color: rgb(0, 0, 0);">Enrolled now</p>
+
+  <button class="button1" 
+  onclick="
+  console.log('Cart qty: '+qty);">Show Quantity</button>
+ 
+ <button class="button2" onclick="
+  qty=qty+1;
+  console.log('Cart qty: '+qty);">Add to cart</button>
+ 
+  <button class="button3" onclick="
+  qty=qty+2;
+  console.log('Cart qty: '+qty);
+  ">+2</button>
+  
+  <button class="button4" onclick="
+  qty=qty+3;
+  console.log('Cart qty: '+qty);
+  ">+3</button>
+ 
+ <button class="button5" onclick="
+  qty=0;
+  console.log('Cart was Reset');
+  console.log('Cart qty: '+qty);
+  ">Reset Cart</button>
+    <script>
+      let qty=0;
+      
+    </script>
+</body>
+</html>

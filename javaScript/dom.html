@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+    <title>Dom</title>
+    <style>
+        .button{
+            background-color: white;
+            border-radius: 2px;
+
+        }
+    </style>
+    
+</head>
+<body style="background-color: rgb(253, 254, 255);">
+    
+
+    
+<button>Hello</button>
+<button class="second-button">button 2</button>
+<script>
+    //every HTML in js is an object
+    //and every object have some property and methods
+    
+    console.log(document.querySelector('button').innerHTML="from hello to hi");
+    
+    const buttonElement=document
+     .querySelector('.second-button');
+    buttonElement.innerHTML="changed";
+    /*
+    console.log(document.title);
+    document.title='changed title';
+    //connection between HTML anf js
+    console.log(document.body);
+    console.log(document.body.innerHTML);
+    console.log(document.body.innerHTML="hello");
+
+    document.body.innerHTML='<button>click me</button>';
+   
+
+    //DOM->Document object model
+    //somehow link with webpage
+     document.body.innerHTML="sabb ho ja chuumantar";
+    document.title='change title';
+    */
+</script>
+    
+
+    
+</body>
+</html>

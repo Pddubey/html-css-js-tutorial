@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function displayArray(){
+            for(let i=0; i<taskList.length; i++){
+                console.log(taskList[i]);
+            }
+        }
+        let taskList=[{name:'pd',dateOfBirth:'22-11-2003'},
+                    {name:'mahi',dateOfBirth:'22-11-2003'}];
+        let temp={name:'sahu',dateOfBirth:'22-11-2003'};
+        
+        taskList.push(temp);
+        displayArray();
+
+        taskList.splice(0,1);
+        displayArray();
+        
+        
+
+     
+    </script>
+</body>
+</html>

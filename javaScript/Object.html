@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+    <title>javaScript objects</title>
+    <style>
+        .button{
+            background-color: white;
+            border-radius: 2px;
+
+        }
+    </style>
+    
+</head>
+<body style="background-color: lightpink;">
+    <button onclick="
+        localStorage.setItem('name','priyanshu');
+        alert(localStorage.getItem('message'));
+        ">click me</button>
+
+    
+
+    <script>
+        let name=localStorage.getItem('name');
+        console.log(name);
+   
+
+        let product={
+            name:'priyanshu',
+            age: 18,
+            last_name:'dubey',
+            goal:'to become so powerful'
+
+        };
+     console.log(product);
+        console.log(product.goal);
+        console.log(product.last_name);
+        console.log(product.goal='becoming billionaire');
+        product.gf='not exist';
+        console.log(product);
+        delete product.gf;
+        console.log(product);
+        console.log(product['name']);
+    
+        const product2={
+            name:'shirt',
+            price:2800,
+            rating:{
+                star:5,
+                count:89
+            },
+            ['shirt-count']:3,
+            fun:function greeting(){
+                console.log('hi');
+            }
+
+        };
+        console.log(product2);
+        console.log(product2.rating.star);
+        product2.fun();
+        console.log(typeof console);
+
+        //JSON-> javascript object notation
+        //like an java =script object having less features
+
+        console.log(JSON.stringify(product2));
+
+        console.log(JSON.parse(JSON.stringify(product2)));
+
+        //localstorage -> permanently store
+        localStorage.setItem("message","hello");
+        console.log(localStorage.getItem('message'));
+
+        
+   </script>
+
+    
+</body>
+</html>
